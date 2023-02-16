@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="shortcut icon" href="images/text-editor copy.png" type="image/x-icon">
+   <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+      <!-- fontawesome icon -->
+    <script src="https://kit.fontawesome.com/285ca296c5.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-slate-700">
+    <main class="w-9/12 my-10 bg-slate-300 mx-auto border-2 border-stone-900 rounded-md">
+        <section class="border-b-2 pb-2 border-stone-900">
+            <h1 class="text-4xl text-slate-700 text-center py-5 border-b border-stone-900">Edit Your Text</h1>
+            <div class="md:flex justify-around text-2xl ml-5 md:ml-0 mt-3">
+                <div class="flex gap-7">
+                    <button id="bold-btn"><i class="fa-solid fa-b"></i></button>
+                    <button id="italic-btn"><i class="fa-solid fa-italic"></i></button>
+                    <button id="underline-btn"><i class="fa-solid fa-underline"></i></button>
+                </div>
+                <div class="flex gap-7 my-5 md:my-0">
+                    <button id="left-align-btn"><i class="fa-solid fa-align-left"></i></button>
+                    <button id="center-align-btn"><i class="fa-solid fa-align-center"></i></button>
+                    <button id="right-align-btn"><i class="fa-solid fa-align-right"></i></button>
+                    <button id="justify-align-btn"><i class="fa-solid fa-align-justify"></i></button>
+                </div>
+                <div class="flex gap-5">
+                    <input type="number" min="16" max="100" value="16" id="input-font-size">
+                    <button id="uppercase-btn"><img src="images/aA.png"></button>
+                    <input type="color"id="color-change">
+                </div>
+            </div>
+        </section>
+        <section class="m-5 border-2 h-96 border-stone-900">
+            <textarea name="" id="text-box" class="h-full w-full"></textarea>
+        </section>
+    </main>
+    <!-- javasript -->
+    <script src="sript.js"></script>
+</body>
+</html>
